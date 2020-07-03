@@ -10,6 +10,7 @@ public class App
 {
     public static void main( String[] args )
     {
+        Valores valor = new Valores("Eduardo", "Vega");
         /*List<Valores> list = new ArrayList<Valores>();
         list.add(new Valores("Eduardo", "Vega"));
         list.add(new Valores("Jorge", "Garcia"));
@@ -35,9 +36,12 @@ public class App
         map.put(10, "Rebecca Lewis");
         map.put(11, "Tristan Walker");
         map.put(12, "Jade Brown");
+        map.put(13, valor.getNombre() + " " + valor.getApellido());
 
         map.entrySet().stream()
         .filter(x -> x.getKey() > 10 || x.getKey() == 8)
         .forEach(System.out::println);
+
+
     }
 }
