@@ -38,10 +38,11 @@ public class App
         map.put(13, new Valores("Claire", "Redfield"));
         /*map.put(13, valor.getNombre() + " " + valor.getApellido());*/
 
-        map.entrySet().stream()
+        /*map.entrySet().stream()
         .filter(x -> x.getKey() > 10 || x.getKey() == 8)
+        .forEach(System.out::println);*/
+        map.entrySet().stream()
+        .filter(lel -> lel.getValue().getApellido().matches(".*er$"))
         .forEach(System.out::println);
-
-
     }
 }
